@@ -3,11 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7475B1676299913D562A8A20 /* Pods_BitcoinApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A8D292B77AE13E192B4A2A /* Pods_BitcoinApp.framework */; };
+		FA6E3BD02605D5C5003F7176 /* TransactionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BCF2605D5C5003F7176 /* TransactionDataProvider.swift */; };
+		FA6E3BD32605D601003F7176 /* TransactionsLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BD22605D601003F7176 /* TransactionsLocalStorage.swift */; };
+		FA6E3BD62605D619003F7176 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BD52605D619003F7176 /* TransactionService.swift */; };
+		FA6E3BD92605D628003F7176 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BD82605D628003F7176 /* TabBarController.swift */; };
+		FA6E3BDC2605D638003F7176 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BDB2605D638003F7176 /* ConverterViewController.swift */; };
+		FA6E3BDF2605D648003F7176 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BDE2605D648003F7176 /* TransactionsViewController.swift */; };
+		FA6E3BE22605D656003F7176 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BE12605D656003F7176 /* TransactionsViewModel.swift */; };
+		FA6E3BE52605D667003F7176 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BE42605D667003F7176 /* TransactionTableViewCell.swift */; };
+		FA6E3BE82605D677003F7176 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BE72605D677003F7176 /* DetailsViewController.swift */; };
+		FA6E3BEB2605D68A003F7176 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BEA2605D68A003F7176 /* Transaction.swift */; };
+		FA6E3BEE2605D699003F7176 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E3BED2605D699003F7176 /* Currency.swift */; };
 		FAB25DF826051EA000A9C1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25DF726051EA000A9C1A5 /* AppDelegate.swift */; };
 		FAB25DFA26051EA000A9C1A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25DF926051EA000A9C1A5 /* SceneDelegate.swift */; };
 		FAB25DFC26051EA000A9C1A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25DFB26051EA000A9C1A5 /* ViewController.swift */; };
@@ -15,23 +26,23 @@
 		FAB25E0226051EA000A9C1A5 /* BitcoinApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E0026051EA000A9C1A5 /* BitcoinApp.xcdatamodeld */; };
 		FAB25E0426051EA200A9C1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB25E0326051EA200A9C1A5 /* Assets.xcassets */; };
 		FAB25E0726051EA200A9C1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB25E0526051EA200A9C1A5 /* LaunchScreen.storyboard */; };
-		FAB25E2026051FD900A9C1A5 /* TransactionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E1E26051FD900A9C1A5 /* TransactionDataProvider.swift */; };
-		FAB25E2126051FD900A9C1A5 /* TransactionsLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E1F26051FD900A9C1A5 /* TransactionsLocalStorage.swift */; };
-		FAB25E2C2605200300A9C1A5 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E242605200200A9C1A5 /* TransactionsViewModel.swift */; };
-		FAB25E2D2605200300A9C1A5 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E252605200200A9C1A5 /* TransactionTableViewCell.swift */; };
-		FAB25E2E2605200300A9C1A5 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E262605200200A9C1A5 /* ConverterViewController.swift */; };
-		FAB25E2F2605200300A9C1A5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E272605200200A9C1A5 /* Currency.swift */; };
-		FAB25E302605200300A9C1A5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E282605200200A9C1A5 /* TabBarController.swift */; };
-		FAB25E312605200300A9C1A5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E292605200200A9C1A5 /* DetailsViewController.swift */; };
-		FAB25E322605200300A9C1A5 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E2A2605200200A9C1A5 /* Transaction.swift */; };
-		FAB25E332605200300A9C1A5 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E2B2605200300A9C1A5 /* TransactionsViewController.swift */; };
-		FAB25E372605201300A9C1A5 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25E362605201300A9C1A5 /* TransactionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27A8D292B77AE13E192B4A2A /* Pods_BitcoinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97583B010D58C8C2DFA1DF0 /* Pods-BitcoinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinApp.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinApp/Pods-BitcoinApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4169AD85242F45B294E3B19 /* Pods-BitcoinApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinApp.release.xcconfig"; path = "Target Support Files/Pods-BitcoinApp/Pods-BitcoinApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA6E3BCF2605D5C5003F7176 /* TransactionDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataProvider.swift; sourceTree = "<group>"; };
+		FA6E3BD22605D601003F7176 /* TransactionsLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsLocalStorage.swift; sourceTree = "<group>"; };
+		FA6E3BD52605D619003F7176 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		FA6E3BD82605D628003F7176 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FA6E3BDB2605D638003F7176 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		FA6E3BDE2605D648003F7176 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		FA6E3BE12605D656003F7176 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		FA6E3BE42605D667003F7176 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		FA6E3BE72605D677003F7176 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FA6E3BEA2605D68A003F7176 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FA6E3BED2605D699003F7176 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		FAB25DF426051EA000A9C1A5 /* BitcoinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB25DF726051EA000A9C1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB25DF926051EA000A9C1A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,17 +52,6 @@
 		FAB25E0326051EA200A9C1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB25E0626051EA200A9C1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB25E0826051EA200A9C1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB25E1E26051FD900A9C1A5 /* TransactionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionDataProvider.swift; path = "../../../../server/Core layer/TransactionDataProvider.swift"; sourceTree = "<group>"; };
-		FAB25E1F26051FD900A9C1A5 /* TransactionsLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionsLocalStorage.swift; path = "../../../../server/Core layer/TransactionsLocalStorage.swift"; sourceTree = "<group>"; };
-		FAB25E242605200200A9C1A5 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionsViewModel.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/TransactionsViewModel.swift"; sourceTree = "<group>"; };
-		FAB25E252605200200A9C1A5 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionTableViewCell.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/TransactionTableViewCell.swift"; sourceTree = "<group>"; };
-		FAB25E262605200200A9C1A5 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConverterViewController.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/ConverterViewController.swift"; sourceTree = "<group>"; };
-		FAB25E272605200200A9C1A5 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/Currency.swift"; sourceTree = "<group>"; };
-		FAB25E282605200200A9C1A5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/TabBarController.swift"; sourceTree = "<group>"; };
-		FAB25E292605200200A9C1A5 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/DetailsViewController.swift"; sourceTree = "<group>"; };
-		FAB25E2A2605200200A9C1A5 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/Transaction.swift"; sourceTree = "<group>"; };
-		FAB25E2B2605200300A9C1A5 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionsViewController.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Presentation layer/TransactionsViewController.swift"; sourceTree = "<group>"; };
-		FAB25E362605201300A9C1A5 /* TransactionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionService.swift; path = "../../../../3 course/BitcoinApp/BitcoinApp/Service layer/TransactionService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 				E97583B010D58C8C2DFA1DF0 /* Pods-BitcoinApp.debug.xcconfig */,
 				F4169AD85242F45B294E3B19 /* Pods-BitcoinApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,9 +104,9 @@
 		FAB25DF626051EA000A9C1A5 /* BitcoinApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAB25E1926051F8700A9C1A5 /* Core layer */,
 				FAB25E352605200600A9C1A5 /* Service layer */,
 				FAB25E2326051FEB00A9C1A5 /* Presentation layer */,
-				FAB25E1926051F8700A9C1A5 /* Core layer */,
 				FAB25DF726051EA000A9C1A5 /* AppDelegate.swift */,
 				FAB25DF926051EA000A9C1A5 /* SceneDelegate.swift */,
 				FAB25DFB26051EA000A9C1A5 /* ViewController.swift */,
@@ -123,8 +122,8 @@
 		FAB25E1926051F8700A9C1A5 /* Core layer */ = {
 			isa = PBXGroup;
 			children = (
-				FAB25E1E26051FD900A9C1A5 /* TransactionDataProvider.swift */,
-				FAB25E1F26051FD900A9C1A5 /* TransactionsLocalStorage.swift */,
+				FA6E3BCF2605D5C5003F7176 /* TransactionDataProvider.swift */,
+				FA6E3BD22605D601003F7176 /* TransactionsLocalStorage.swift */,
 			);
 			path = "Core layer";
 			sourceTree = "<group>";
@@ -132,14 +131,14 @@
 		FAB25E2326051FEB00A9C1A5 /* Presentation layer */ = {
 			isa = PBXGroup;
 			children = (
-				FAB25E262605200200A9C1A5 /* ConverterViewController.swift */,
-				FAB25E272605200200A9C1A5 /* Currency.swift */,
-				FAB25E292605200200A9C1A5 /* DetailsViewController.swift */,
-				FAB25E282605200200A9C1A5 /* TabBarController.swift */,
-				FAB25E2A2605200200A9C1A5 /* Transaction.swift */,
-				FAB25E2B2605200300A9C1A5 /* TransactionsViewController.swift */,
-				FAB25E242605200200A9C1A5 /* TransactionsViewModel.swift */,
-				FAB25E252605200200A9C1A5 /* TransactionTableViewCell.swift */,
+				FA6E3BD82605D628003F7176 /* TabBarController.swift */,
+				FA6E3BDB2605D638003F7176 /* ConverterViewController.swift */,
+				FA6E3BDE2605D648003F7176 /* TransactionsViewController.swift */,
+				FA6E3BE12605D656003F7176 /* TransactionsViewModel.swift */,
+				FA6E3BE42605D667003F7176 /* TransactionTableViewCell.swift */,
+				FA6E3BE72605D677003F7176 /* DetailsViewController.swift */,
+				FA6E3BEA2605D68A003F7176 /* Transaction.swift */,
+				FA6E3BED2605D699003F7176 /* Currency.swift */,
 			);
 			path = "Presentation layer";
 			sourceTree = "<group>";
@@ -147,7 +146,7 @@
 		FAB25E352605200600A9C1A5 /* Service layer */ = {
 			isa = PBXGroup;
 			children = (
-				FAB25E362605201300A9C1A5 /* TransactionService.swift */,
+				FA6E3BD52605D619003F7176 /* TransactionService.swift */,
 			);
 			path = "Service layer";
 			sourceTree = "<group>";
@@ -266,21 +265,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB25E332605200300A9C1A5 /* TransactionsViewController.swift in Sources */,
+				FA6E3BEB2605D68A003F7176 /* Transaction.swift in Sources */,
 				FAB25E0226051EA000A9C1A5 /* BitcoinApp.xcdatamodeld in Sources */,
+				FA6E3BD92605D628003F7176 /* TabBarController.swift in Sources */,
 				FAB25DFC26051EA000A9C1A5 /* ViewController.swift in Sources */,
-				FAB25E372605201300A9C1A5 /* TransactionService.swift in Sources */,
-				FAB25E302605200300A9C1A5 /* TabBarController.swift in Sources */,
-				FAB25E2D2605200300A9C1A5 /* TransactionTableViewCell.swift in Sources */,
+				FA6E3BD62605D619003F7176 /* TransactionService.swift in Sources */,
+				FA6E3BDF2605D648003F7176 /* TransactionsViewController.swift in Sources */,
+				FA6E3BEE2605D699003F7176 /* Currency.swift in Sources */,
 				FAB25DF826051EA000A9C1A5 /* AppDelegate.swift in Sources */,
-				FAB25E322605200300A9C1A5 /* Transaction.swift in Sources */,
-				FAB25E2026051FD900A9C1A5 /* TransactionDataProvider.swift in Sources */,
-				FAB25E2126051FD900A9C1A5 /* TransactionsLocalStorage.swift in Sources */,
-				FAB25E2F2605200300A9C1A5 /* Currency.swift in Sources */,
-				FAB25E2C2605200300A9C1A5 /* TransactionsViewModel.swift in Sources */,
+				FA6E3BE22605D656003F7176 /* TransactionsViewModel.swift in Sources */,
+				FA6E3BD02605D5C5003F7176 /* TransactionDataProvider.swift in Sources */,
+				FA6E3BD32605D601003F7176 /* TransactionsLocalStorage.swift in Sources */,
 				FAB25DFA26051EA000A9C1A5 /* SceneDelegate.swift in Sources */,
-				FAB25E2E2605200300A9C1A5 /* ConverterViewController.swift in Sources */,
-				FAB25E312605200300A9C1A5 /* DetailsViewController.swift in Sources */,
+				FA6E3BE52605D667003F7176 /* TransactionTableViewCell.swift in Sources */,
+				FA6E3BE82605D677003F7176 /* DetailsViewController.swift in Sources */,
+				FA6E3BDC2605D638003F7176 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
